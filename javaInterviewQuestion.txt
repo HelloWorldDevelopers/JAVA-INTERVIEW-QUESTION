@@ -149,6 +149,8 @@ Both are Java interfaces, and ApplicationContext extends BeanFactory. Both can b
 
 
 -------------------------------
+
+
 Thread:- run,yeild,start,sleep,intrupt,priority,join
          daemon,sysncronize,lock,tryLock,lock,unlock,deadlock
 
