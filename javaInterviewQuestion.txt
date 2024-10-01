@@ -1,0 +1,159 @@
+1) what is garbase collection and what is advantage ?
+   1)  Garbage Collection tracks each and every object available in the JVM heap space, and removes the unused ones.
+   2) No manual memory allocation/deallocation handling because unused memory space is automatically handled by GC
+    JVM has four types of GC implementations:
+
+	Serial Garbage Collector:- this GC implementation freezes all application threads when it runs. 
+	Parallel Garbage Collector:-  The Parallel GC uses multiple threads to perform garbage collection
+	G1 Garbage Collector
+	Z Garbage Collector
+------------------------------------------------------------------------------------------
+2) How Metaspace Works ?
+  1) Metaspace is used to store metadata about classes and methods in a Java application.
+  2) information such as class definitions, method data
+  3)  Metaspace does not have a fixed size. It grows automatically as needed, which helps avoid the OutOfMemoryError that could occur with PermGen when the space was exhausted.
+  4) Unlike PermGen, which had a fixed size and was part of the heap,
+------------------------------------------------------------------------------------------
+3) Class Loader and Its Types
+  1) The Java ClassLoader is an integral part of the Java Runtime Environment (JRE) that dynamically loads Java classes into the Java Virtual Machine (JVM).
+        1) Bootstrap ClassLoader (Primordial ClassLoader)
+	2. Platform Class Loader (Extension ClassLoader):
+	3. System ClassLoader (Application ClassLoader):
+
+
+------------------------------------------------------------------------------------------
+4) Interpreter
+ 1)  Interpreter is a computer program that converts the high-level program statement into Assembly-level language. It converts the code into machine code
+
+------------------------------------------------------------------------------------------
+5) Difference Between Old Generation and New Generation
+------------------------------------------------------------------------------------------
+6) Difference Between Heap and Stack Memory
+------------------------------------------------------------------------------------------
+7)  Why Does Array Index Start from 0?
+     address+ position of number *  size of array
+------------------------------------------------------------------------------------------
+8) Types of Methods in Java
+	Instance Method: Operates on instances of a class.
+	Static Method: Belongs to the class, not instances.
+	Abstract Method: Declared without an implementation in an abstract class.
+	Final Method: Cannot be overridden.
+	Synchronized Method: Used for thread safety.
+------------------------------------------------------------------------------------------
+9) Difference Between Constructor and Method
+------------------------------------------------------------------------------------------
+10) Equals Method for Hash
+------------------------------------------------------------------------------------------
+11) Why We Need Interface if Abstraction Can Be Achieved by Abstract Class
+------------------------------------------------------------------------------------------
+12) Difference Between Interface and Abstract Class
+------------------------------------------------------------------------------------------
+13)  What Are Stereotype Annotations in Spring
+------------------------------------------------------------------------------------------
+14) How Object is Stored in Memory
+------------------------------------------------------------------------------------------
+15)  What is the difference between checked and unchecked exceptions in Java?
+------------------------------------------------------------------------------------------
+16) Explain the exception hierarchy in Java.
+------------------------------------------------------------------------------------------
+17)  What is the difference between throw and throws?
+------------------------------------------------------------------------------------------
+18) What are the differences between synchronized methods and synchronized blocks?
+------------------------------------------------------------------------------------------
+19) Explain the Java Memory Model (JMM) and its implications for multithreading.
+------------------------------------------------------------------------------------------
+20) What are volatile variables, and when would you use them?
+  1) The volatile keyword in Java is used to indicate that a variable's value will be modified by different threads. It is part of the Java Memory Model and serves two primary purposes:
+------------------------------------------------------------------------------------------
+21) What are the different states of a thread in Java?
+  	 NEW: Created but not yet started.
+  	 RUNNABLE: Running or ready to run.
+	 BLOCKED: Waiting for a monitor lock.
+	 WAITING: Waiting indefinitely for another thread to perform an action.
+	 TIMED_WAITING: Waiting for another thread for a specified time.
+	 TERMINATED: Finished execution.
+------------------------------------------------------------------------------------------
+22) What is a Thread Pool, and why is it used?
+   1) A Thread Pool is a collection of pre-initialized threads
+           	
+	Runnable r5 = new Task("task 5");          
+        ExecutorService pool = Executors.newFixedThreadPool(MAX_T);
+        pool.execute(r1); 
+        pool.execute(r2); 
+      
+        pool.shutdown();  
+------------------------------------------------------------------------------------------
+23) What is the significance of the join() method in threads?
+------------------------------------------------------------------------------------------
+24) the role of @conditional annotations
+--->The Spring Framework provides a powerful way to control bean creation and configuration based on specific conditions through its conditional annotations.
+
+------------------------------------------------------------------------------------------
+25) Difference Between Daemon Threads and User Threads In Java
+
+------------------------------------------------------------------------------------------
+26) what is the use devtools 
+------------------------------------------------------------------------------------------
+27) how do you  test spring boot application?
+  ----> unit testing
+------------------------------------------------------------------------------------------
+28) what is the purpose unit testing?
+
+------------------------------------------------------------------------------------------
+29) what is the role of test dependency?
+------------------------------------------------------------------------------------------
+30) what is the role of porm.xml
+------------------------------------------------------------------------------------------
+31) which server provided by spring boot
+ ----> Tomcat, Jetty, and Undertow servers
+------------------------------------------------------------------------------------------
+32) using java code can we check which profile currently use
+------------------------------------------------------------------------------------------
+33) how to enable debugging log in spring boot
+------------------------------------------------------------------------------------------
+34) what is the purpose of spring boot parent
+------------------------------------------------------------------------------------------
+what is Autowored
+--->allows Spring to automatically wire the required beans (dependencies) into your classes
+------------------------------------------------------------------------------------------
+whati is ioc
+ --->IOC (Inversion of Control) and DI (Dependency Injection) is a design pattern to provide loose coupling. It removes the dependency from the program.
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+35) what is @componantScan
+   1) the component scan scan hole project and detect beans , service,repogistory,controllers
+------------------------------------------------------------------------------------------
+36) @Component is an annotation that allows Spring to detect our custom beans automatically.
+------------------------------------------------------------------------------------------
+37)BeanFactory and ApplicationContext:
+Both are Java interfaces, and ApplicationContext extends BeanFactory. Both can be configured using XML configuration files, but ApplicationContext also supports Java configuration
+------------------------------------------------------------------------------------------
+39)what is the bean
+ ----> beans is an a object managed by spring ioc
+------------------------------------------------------------------------------------------
+40) What is an Idempotent REST API?
+------------------------------------------------------------------------------------------
+41) callable and future
+------------------------------------------------------------------------------------------
+
+
+42) what is the use of @qualifire
+--->One of the most important annotations in Spring is the @Qualifier annotation, which is used to resolve ambiguity in bean injection
+------------------------------------------------------------------------------------------
+
+43) @configuration
+----> One of the most important annotations in spring is @Configuration annotation which indicates that the class has @Bean definition methods. So Spring container can process the class and generate Spring Beans to be used in the application. 
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+
+
+
+-------------------------------
+Thread:- run,yeild,start,sleep,intrupt,priority,join
+         daemon,sysncronize,lock,tryLock,lock,unlock,deadlock
+
+exception
+garbase collection
+oops
+
+
